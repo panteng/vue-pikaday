@@ -5,6 +5,9 @@ var VueRouter = require('vue-router');
 Vue.use(VueRouter);
 Vue.config.debug = true;
 
+// register directives
+Vue.directive('pikaday', require('./directives/pikaday'));
+
 // register views
 Vue.component('v-demos', require('./views/demos'));
 
