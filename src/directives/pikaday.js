@@ -41,6 +41,7 @@ module.exports = {
         var _this = this;
 
         _this.el.value = val;
+        _this.instanse.setDate(val);
     },
     unbind: function () {
         var _this = this;
