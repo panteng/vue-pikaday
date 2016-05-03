@@ -5,6 +5,6 @@ module.exports = {
             defaultDate: '',
             chineseDate: '',
             differentFormatDate: ''
-        }
+        };
     }
 };

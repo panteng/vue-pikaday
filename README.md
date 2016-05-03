@@ -2,6 +2,6 @@
 
 A custom directive for using Pikaday in Vue.js apps.
 
-[Demo][1]
+![banner](https://raw.githubusercontent.com/panteng/vue-pikaday/master/banner.jpg)
 
-[1]: http://panteng.me/demos/vue-pikaday
+[Demo](http://panteng.me/demos/vue-pikaday)
