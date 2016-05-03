@@ -4,7 +4,7 @@ var Pickaday = require('pikaday');
 
 module.exports = {
     twoWay: true,
-    params: ['lang', 'format'],
+    params: ['format'],
     bind: function () {
         var _this = this;
         var i18n;
