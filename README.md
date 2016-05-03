@@ -1,6 +1,6 @@
 # Vue-Pikaday
 
-A custom directive for using Pikaday in Vue.js apps.
+A custom directive for using [Pikaday](https://github.com/dbushell/Pikaday) in Vue.js apps.
 
 ![banner](https://raw.githubusercontent.com/panteng/vue-pikaday/master/banner.jpg)
 
@@ -10,7 +10,7 @@ A custom directive for using Pikaday in Vue.js apps.
 
 1. Download this repo and copy file `./src/directives/pikaday.js` into your project.
 
-2. Register Vue-Echarts as a directive in your `main.js`:
+2. Register Vue-Pikaday as a directive in your `main.js`:
 
         // main.js
         Vue.directive('pikaday', require('./directives/pikaday'));  //  your project structure may be different from mine, so feel free to change the path of `pikaday.js`.
