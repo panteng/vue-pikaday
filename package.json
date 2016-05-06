@@ -1,6 +1,6 @@
 {
   "name": "vue-pikaday",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A custom directive for using Pikaday in Vue.js apps.",
   "scripts": {
     "dev": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot",

@@ -35,10 +35,10 @@ A custom directive for using [Pikaday](https://github.com/dbushell/Pikaday) in V
             }
         }
         
-5. If you want a different format of time, there's a property to do this.
+5. If you want a different format of time, there's a `format` property to do this.
 
         // template.html
-        <input type="text" placeholder="Pick a date" v-pikaday="defaultDate" format="MMMM Do, YYYY">
+        <input type="text" placeholder="Pick a date" v-pikaday="defaultDate" format="MMMM Do, YYYY">        
 
 ## License
 

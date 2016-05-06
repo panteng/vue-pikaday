@@ -9,7 +9,6 @@ module.exports = {
         var _this = this;
         var i18n;
 
-        // uncomment this if you need Chinese version
         //i18n = {
         //    previousMonth: '上个月',
         //    nextMonth: '下个月',
@@ -18,7 +17,6 @@ module.exports = {
         //    weekdaysShort: ['周日', '周一', '周二', '周三', '周四', '周五', '周六']
         //};
 
-        // comment this if you need Chinese version
         i18n = {
             previousMonth: 'Last Month',
             nextMonth: 'Next Month',
@@ -27,8 +25,7 @@ module.exports = {
             weekdaysShort: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
         };
 
-
-        _this.instanse = new Pickaday({
+        _this.instance = new Pickaday({
             field: _this.el,
             i18n: i18n,
             format: _this.params.format || 'YYYY-MM-DD',
@@ -41,11 +38,11 @@ module.exports = {
         var _this = this;
 
         _this.el.value = val;
-        _this.instanse.setDate(val);
+        _this.instance.setDate(val);
     },
     unbind: function () {
         var _this = this;
 
-        _this.instanse.destory();
+        _this.instance.destory();
     }
 };
