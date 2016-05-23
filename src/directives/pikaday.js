@@ -43,6 +43,6 @@ module.exports = {
     unbind: function () {
         var _this = this;
 
-        _this.instance.destory();
+        _this.instance.destroy();
     }
 };
