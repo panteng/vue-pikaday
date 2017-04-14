@@ -8,22 +8,18 @@ A custom directive for using [Pikaday](https://github.com/dbushell/Pikaday) in V
 
 ## Usage
 
-1. Download this repo and copy file `./src/directives/pikaday.js` into your project.
+1. Download this repo and copy file `directives/pikaday.js` into your project.
 
 2. Register Vue-Pikaday as a directive in your `main.js`:
 
         // main.js
-        Vue.directive('pikaday', require('./directives/pikaday'));  //  your project structure may be different from mine, so feel free to change the path of `pikaday.js`.
-       
-3. Vue-Pikaday need an `<input>` element to display time and panel.
+        Vue.directive('pikaday', require('./directives/pikaday'));
+
+
+3. Vue-Pikaday need an `<input>` element to display time. Add `v-pikaday` directive to this `<input>` and assign a string value to it.
 
         // template.html
-        <input type="text" placeholder="Pick a date">
-        
-4. Add `v-pikaday` directive to this `<input>` and assign a string value to it.
-
-        // template.html
-        <input type="text" placeholder="Pick a date" v-pikaday="defaultDate">
+        <input type="text" v-pikaday="defaultDate">
         
         // index.js
         module.exports = {
@@ -35,10 +31,10 @@ A custom directive for using [Pikaday](https://github.com/dbushell/Pikaday) in V
             }
         }
         
-5. If you want a different format of time, there's a `format` property to do this.
+4. If you want a different format of time, there's a `format` option to do this.
 
         // template.html
-        <input type="text" placeholder="Pick a date" v-pikaday="defaultDate" format="MMMM Do, YYYY">        
+        <input type="text" v-pikaday="defaultDate" format="MMMM Do, YYYY">        
 
 ## License
 
