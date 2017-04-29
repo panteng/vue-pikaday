@@ -12,20 +12,6 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.js$/,
-                enforce: 'pre',
-                exclude: /node_modules/,
-                use: [
-                    {
-                        loader: 'jshint-loader',
-                        options: {
-                            emitErrors: false,
-                            failOnHint: false
-                        }
-                    }
-                ]
-            },
-            {
                 test: /\.html$/,
                 use: [
                     {
@@ -39,8 +25,22 @@ module.exports = {
                     "style-loader",
                     "css-loader"
                 ]
+            },
+            {
+                test: /\.js$/,
+                exclude: /node_modules/,
+                use: [
+                    {
+                        loader: 'babel-loader',
+                    }
+                ]
             }
         ]
+    },
+    resolve: {
+        alias: {
+            vue: 'vue/dist/vue.js'
+        }
     },
     devServer: {
         contentBase: './'
