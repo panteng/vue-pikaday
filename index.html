@@ -9,13 +9,8 @@
 <body>
 <div id="app">
     <div class="form-group">
-        <label for="pickStartDate">Default</label>
-        <input type="text" class="form-control" placeholder="Pick a date">
-    </div>
-
-    <div class="form-group">
-        <label for="differentFormat">Different format</label>
-        <input type="text" class="form-control" placeholder="Pick a date">
+        <label for="pick-a-date">Pick A Date</label>
+        <input type="text" class="form-control" placeholder="Pick a date" v-model="date" v-pikaday="date">
     </div>
 </div>
 

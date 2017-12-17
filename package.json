@@ -1,7 +1,7 @@
 {
   "name": "vue-pikaday",
   "version": "0.4.0",
-  "description": "A date picker component for Vue.js (v2.x.x) apps. Built on top of Pikaday.",
+  "description": "A simple custom directive for using Pikaday in Vue.js apps.",
   "scripts": {
     "dev": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot",
     "prod": "node ./node_modules/webpack/bin/webpack.js -p"
