@@ -34,8 +34,8 @@ A simple yet flexible custom directive for using [Pikaday](https://github.com/db
 
         // this is your index.html file
         ...
-        <input id="this-is-date" type="text" v-model="startDate" v-pikaday>
-        <input id="this-is-date" type="text" v-model="endDate" v-pikaday>
+        <input id="this-is-start-date" type="text" v-model="startDate" v-pikaday>
+        <input id="this-is-end-date" type="text" v-model="endDate" v-pikaday>
         ...
 
     You may wonder why we need both `v-model` and `v-pikaday` here.
@@ -48,7 +48,7 @@ A simple yet flexible custom directive for using [Pikaday](https://github.com/db
         // this is your index.html file
         ...
         <input id="this-is-start-date" type="text" v-model="startDate" v-pikaday>
-        <input id="this-is-start-date" type="text" v-model="endDate" v-pikaday="endDatePikadayOptions">
+        <input id="this-is-end-date" type="text" v-model="endDate" v-pikaday="endDatePikadayOptions">
         ...
 
         // this is your main.js file
