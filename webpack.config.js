@@ -1,6 +1,8 @@
 const path = require('path');
+const webpack = require('webpack');
 
 module.exports = {
+    mode: 'development',
     entry: [
         './main.js'
     ],
@@ -27,22 +29,26 @@ module.exports = {
                 ]
             },
             {
-                test: /\.js$/,
-                exclude: /node_modules/,
-                use: [
-                    {
-                        loader: 'babel-loader',
+                test: /\.m?js$/,
+                exclude: /(node_modules|bower_components)/,
+                use: {
+                    loader: 'babel-loader',
+                    options: {
+                      presets: ['@babel/preset-env']
                     }
-                ]
+                }
             }
         ]
     },
+    plugins: [
+        new webpack.HotModuleReplacementPlugin()
+    ],
     resolve: {
         alias: {
             vue: 'vue/dist/vue.js'
         }
     },
     devServer: {
-        contentBase: './'
+        hot: true
     }
 };

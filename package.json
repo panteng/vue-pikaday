@@ -1,29 +1,30 @@
 {
   "name": "vue-pikaday",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "description": "A simple custom directive for using Pikaday in Vue.js apps.",
-  "scripts": {
-    "dev": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot",
-    "prod": "node ./node_modules/webpack/bin/webpack.js -p"
-  },
+  "author": "Chris Pan <chrispan.pt@gmail.com>",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/panteng/vue-pikaday.git"
   },
-  "author": "Chris Pan <chrispan.pt@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "dev": "webpack-dev-server",
+    "prod": "webpack --mode=production"
+  },
   "dependencies": {
-    "pikaday": "^1.4.0",
-    "vue": "^2.2.6"
+    "pikaday": "^1.7.0",
+    "vue": "^2.5.17"
   },
   "devDependencies": {
-    "babel-core": "^6.24.1",
-    "babel-loader": "^7.0.0",
-    "babel-preset-env": "^1.4.0",
-    "css-loader": "^0.28.0",
-    "html-loader": "^0.5.1",
-    "style-loader": "^0.19.1",
-    "webpack": "^3.10.0",
-    "webpack-dev-server": "^2.4.2"
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.0",
+    "babel-loader": "^8.0.4",
+    "css-loader": "^1.0.0",
+    "html-loader": "^0.5.5",
+    "style-loader": "^0.23.0",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.9"
   }
 }
