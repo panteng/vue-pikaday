@@ -3,16 +3,16 @@ import 'pikaday/css/pikaday.css';
 
 export default {
     bind: (el, binding) => {
-        el.pikadayInstance = new Pikaday({
-            field: el,
-            onSelect: () => {
-                var event = new Event('input', { bubbles: true });
-                el.value = el.pikadayInstance.toString();
-                el.dispatchEvent(event);
-            },
-            // add more Pikaday options below if you need
-            // all available options are listed on https://github.com/dbushell/Pikaday
-        });
+        const instanceOptions = binding.value || {};
+
+        // override `field` and `onSelect` option
+        instanceOptions.field = el;
+        instanceOptions.onSelect = function() {
+            el.value = this.toString();
+            el.dispatchEvent( new Event('input', { bubbles: true }) );
+        };
+
+        el.pikadayInstance = new Pikaday(instanceOptions);
     },
 
     unbind: (el) => {

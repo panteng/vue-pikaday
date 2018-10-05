@@ -1,20 +1,48 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Vue-Pikaday</title>
     <link rel="stylesheet" href="stylesheets/bootstrap.min.css">
     <link rel="stylesheet" href="stylesheets/style.css">
 </head>
+
 <body>
+
 <div id="app">
-    <div class="alert alert-info">You have picked this date: {{date}}.</div>
+
+    <div class="alert alert-info" v-show="startDate">You have picked this start date: {{startDate}}.</div>
     <div class="form-group">
-        <label for="pick-a-date">Pick A Date</label>
-        <input type="text" class="form-control" placeholder="Pick a date" v-model="date" v-pikaday="date">
+        <label for="pick-a-date">Pick A Start Date</label>
+        <input
+            id="this-is-start-date"
+            type="text"
+            class="form-control"
+            placeholder="Pick a date"
+            v-model="startDate"
+            v-pikaday
+        >
     </div>
+
+    <div class="alert alert-info" v-show="endDate">You have picked this end date: {{endDate}}.</div>
+    <div class="form-group">
+        <label for="pick-a-date">Pick A End Date (Different Format)</label>
+        <input
+            id="this-is-end-date"
+            type="text"
+            class="form-control"
+            placeholder="Pick a date"
+            v-model="endDate"
+            v-pikaday="endDatePikadayOptions"
+        >
+    </div>
+
 </div>
 
 <script src="bundles/bundle.js"></script>
+
 </body>
+
 </html>
