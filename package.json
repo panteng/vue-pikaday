@@ -1,6 +1,6 @@
 {
   "name": "vue-pikaday-directive",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "description": "A simple yet flexible custom directive for using Pikaday in Vue.js (v2.x.x) apps.",
   "author": "Chris Pan <chrispan.pt@gmail.com>",
   "main": "./directives/pikaday.js",
@@ -14,8 +14,8 @@
     "prod": "webpack --mode=production"
   },
   "dependencies": {
-    "pikaday": "^1.7.0",
-    "vue": "^2.5.17"
+    "pikaday": "^1.x.x",
+    "vue": "^2.x.x"
   },
   "devDependencies": {
     "@babel/core": "^7.1.2",
