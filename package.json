@@ -1,8 +1,9 @@
 {
-  "name": "vue-pikaday",
-  "version": "0.5.0",
-  "description": "A simple custom directive for using Pikaday in Vue.js apps.",
+  "name": "vue-pikaday-directive",
+  "version": "0.5.1",
+  "description": "A simple yet flexible custom directive for using Pikaday in Vue.js (v2.x.x) apps.",
   "author": "Chris Pan <chrispan.pt@gmail.com>",
+  "main": "./directives/pikaday.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/panteng/vue-pikaday.git"

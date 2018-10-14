@@ -9,14 +9,16 @@ A simple yet flexible custom directive for using [Pikaday](https://github.com/db
 
 ## Usage
 
-1. Download this repo and copy file `directives/pikaday.js` into your project.
+1. Install via npm:
+
+        npm install vue-pikaday-directive --save
 
 2. Register Vue-Pikaday as a directive in your Vue.js app:
 
         // this is your main.js file
 
         import Vue from 'vue';
-        import V_Pikaday from './directives/pikaday';
+        import V_Pikaday from 'vue-pikaday-directive';
 
         const App = new Vue({
             el: '#app',
