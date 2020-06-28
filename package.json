@@ -1,6 +1,6 @@
 {
   "name": "vue-pikaday-directive",
-  "version": "0.6.0",
+  "version": "0.6.1",
   "description": "A simple yet flexible custom directive for using Pikaday in Vue.js (v2.x.x) apps.",
   "author": "Chris Pan",
   "main": "./directives/pikaday.js",

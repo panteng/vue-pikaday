@@ -5,15 +5,16 @@ A simple yet flexible custom directive for using [Pikaday](https://github.com/db
 ![banner](https://raw.githubusercontent.com/panteng/vue-pikaday/master/banner.jpg)
 
 ## Demo
+
 [Click Here](http://panteng.github.io/vue-pikaday)
 
 ## Usage
 
-1. Install via npm:
+1.  Install via npm:
 
         npm install vue-pikaday-directive --save
 
-2. Register Vue-Pikaday as a directive in your Vue.js app:
+2.  Register Vue-Pikaday as a directive in your Vue.js app:
 
         // this is your main.js file
 
@@ -31,8 +32,7 @@ A simple yet flexible custom directive for using [Pikaday](https://github.com/db
             }
         });
 
-
-3. Vue-Pikaday need an `<input>` element to display date. Add `v-model` and `v-pikaday` directive to this `<input>`.
+3.  Vue-Pikaday need an `<input>` element to display date. Add `v-model` and `v-pikaday` directive to this `<input>`.
 
         // this is your index.html file
         ...
@@ -44,8 +44,7 @@ A simple yet flexible custom directive for using [Pikaday](https://github.com/db
     `v-model` is for data binding.
     `v-pikaday` is just for initializing the Pikaday instance. It DOES NOT do any data binding job.
 
-
-4. If you need to set some custom options for a specific Pikaday instance (eg. a different format of date), you can do it by binding an options object to `v-pikaday` directive:
+4.  If you need to set some custom options for a specific Pikaday instance (eg. a different format of date), you can do it by binding an options object to `v-pikaday` directive:
 
         // this is your index.html file
         ...
@@ -64,8 +63,8 @@ A simple yet flexible custom directive for using [Pikaday](https://github.com/db
                 endDatePikadayOptions: {
                     format: 'D/M/YYYY',
                     // you can put more pikaday options here, based on your needs
-                    // `field` and `onSelect` option will be ignored
-                    // because they are used by v-pikaday directive to initialize Pikaday instance
+                    // however `field` and `onSelect` option will be ignored
+                    // because they are being used by v-pikaday directive to initialize a Pikaday instance
                 },
             },
             directives: {
@@ -73,21 +72,18 @@ A simple yet flexible custom directive for using [Pikaday](https://github.com/db
             }
         });
 
-
-5. If you need to access a Pikaday instance, you can do it by:
+5.  If you need to access a Pikaday instance, you can do it by:
 
         // this is your main.js file
 
         ...
         mounted: function () {
-            const startDateElement = document.querySelector('#this-is-start-date');    
+            const startDateElement = document.querySelector('#this-is-start-date');
             console.log(startDateElement.pikadayInstance);
-            // you can access a Pikaday instance at the `mounted` stage of the parent VM,
-            // by accessing the `pikadayInstance` property of the element
-            // that v-pikaday directive is bind with
+            // you can access a Pikaday instance at the `mounted` stage of the parent VM
+            // by accessing the `pikadayInstance` property of the element that v-pikaday directive is bind with
         }
         ...
-
 
 ## License
 
